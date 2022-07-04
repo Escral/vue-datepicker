@@ -377,7 +377,7 @@
     );
 
     const calendarAmm = computed((): number[] =>
-        props.multiCalendars > 0 && props.range ? [...Array(props.multiCalendars).keys()] : [0],
+        props.multiCalendars > 0 ? [...Array(props.multiCalendars).keys()] : [0], //  && props.range
     );
 
     const isFirstInstance = computed(
